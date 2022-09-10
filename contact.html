@@ -1,0 +1,99 @@
+
+ <html>
+  <head>
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" type="image/x-icon" href="/Images/cricket.ico">
+   <script>
+    function validate()
+      {
+       var name1=document.getElementById("name").value;
+       var phone1=document.getElementById("phone").value;
+       var email1=document.getElementById("email").value;
+       var message1=document.getElementById("message").value;
+      
+       if (name1.length<3)
+       {
+              Text="please enter full name";
+              success.innerHTML=Text;
+              return false;
+       }
+      if(isNaN(phone1)|| phone1.length!=10){ 
+       Text="please enter valid Phone number";
+              success.innerHTML=Text;
+              return false;
+      }
+      if(email1.indexOf("@")==-1||email1.length<8){
+       Text="please enter valid email;"
+              success.innerHTML=Text;
+              return false;
+      }
+      if (message1.length<=20) {
+       Text="please enter more that 20 characters";
+              success.innerHTML=Text;
+              return false; 
+          }
+        }
+          
+          </script>     
+    <title> Contact forms </title>
+  </head>
+  <body>
+    <!-- This is an image which is used for the banner is the -->
+    <header>
+      <img src="Images/cricket.png" width="1350" height="600">
+    </header>
+    <div style= "background-color:#ff1493; overflow:auto;">
+      <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul> 
+    </div>
+   <!-- The social media icon bar. The social media icons only work whe they are at the header. It is going to work if even 1% of the icon is on the header -->
+   <div class="icon-bar">
+    <a href="https://www.facebook.com/virat.kohli" class="facebook"><i class="fa fa-facebook"></i></a> 
+    <a href="https://www.twitter.com/puranja14887601" class="twitter"><i class="fa fa-twitter"></i></a> 
+    <a href="https://www.instagram.com/puranjay40/" class="instagram"><i class="fa fa-instagram"></i></a> 
+    <a href="https://www.twitch.tv/cricgames" class="twitch"><i class="fa fa-twitch"></i></a>
+    <a href="https://www.youtube.com/channel/UC91Nq3Gg6aaO-4TReZLedgw" class="youtube"><i class="fa fa-youtube"></i></a> 
+  </div>
+  
+    <div id="overlay">
+    <form id="contact"  method="post" action="submit.html" onsubmit="return validate();">
+      <h1> Contact US </h1>
+              <label for="name"> Fullname </label>
+              <input type="text" id="name" placeholder="Your name" name="entry.125668345" required>
+              <small class="error"></small>
+
+              <label for="email"> Email </label>
+              <input type="text" id="email" placeholder="Your email" name="entry.2006698538" required>
+              <small class="error"></small>
+
+              <label for="country"> Country </label>
+              <select name="country"  name="entry.480828148" required>
+               <option value="No Selction"> No selction</option>
+              <option value="India">India</option>
+              <option value="Australia">Australia</option>
+              <option value="England">England</option>
+              <option value="South Africa">South Africa</option>
+              <option value="United Arab Emirates"> United Arab Emirates</option>
+              </select>
+              <small class="error"></small>
+
+              <label for="phone"> Phone </label>
+              <input type="text" id="phone" placeholder="Phone Number" name="entry.210885211">
+              <small class="error"></small>
+
+              <div class="submit">
+              <input type="submit" value="submit"> 
+              <p id="success"></p>
+              </div> 
+    </form>
+    </div>    
+    <script src="script.js"></script>   
+    </body>
+</html>

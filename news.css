@@ -1,0 +1,62 @@
+ ul li {
+float: left; list-style-type: none;}
+ul li a {
+display: block;
+color: rgb(107, 117, 62);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size:20px; font-family: Arial, Calibri; color: rgb(30, 0, 255);  
+}
+li a:hover {
+background-color: #4ed429;
+}
+
+h1{color:rgb(43, 0, 255); text-align: left;}
+h2{color:rgb(255, 0, 200); font-size: 40px;}
+p{font-size:20px; font-family: Arial; color: black; text-align: justify;}
+
+/* Style the body */
+body{background-color: yellow; color: black; text-align: left;}
+/* Header/Logo Title */
+header {
+  padding: 25px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+/* Page contact */
+.content {padding:20px;}
+
+table{ width:100%; height:10%;} 
+td{padding:10px; font-size:20px; color: #000000 ;}
+
+#top { padding: 10px;
+  background-color: rgb(0, 153, 255); 
+      text-align: center;}
+#side { padding: 10px;
+       background-color: rgb(0, 153, 255); 
+     text-align: center;}
+ #trophy { padding: 10px;
+      background-color: rgb(0, 153, 255); 
+          text-align: center;}
+ #side { padding: 10px;
+            background-color: rgb(0, 153, 255); 
+          text-align: center;}
+    #career { padding: 10px;
+            background-color: rgb(0, 153, 255); 
+          text-align: center;}
+   #ACE { padding: 10px;
+            background-color: rgb(0, 153, 255); 
+          text-align: center;}
+.space{color: yellow; font-size: 30px; text-align: center;}
+.leagues{color: #000000; background-color: #ffcccc; border: 5px solid crimson; border-bottom: none;}
+.domestic{background-color:greenyellow; border: 5px solid crimson; border-bottom: none;}
+.career{color:#000000; background-color: #ffcccc; border: 5px solid crimson; border-bottom: none;}
+.Ashes{background-color:greenyellow; border: 5px solid crimson;}
+
+p small{ color: white;}
+footer{ background-color: black; padding: 5px;}
+ 
+   

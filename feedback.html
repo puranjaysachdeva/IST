@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="icon" type="image/x-icon" href="/Images/cricket.ico">
+    <title>Feedback form</title>
+</head>
+
+<body>
+      <!-- This is an image which is used for the banner is the -->
+      <header>
+        <img src="Images/cricket.png" width="1350" height="600">
+      </header>
+    <div style= "background-color:#ff1493; overflow:auto;">
+        <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+      </div>
+      <div id="overlay">
+        <form id="feedback"  method="post" action="submit.html" onsubmit="return validate();">
+            <h1> Feedback form </h1>
+                    <label for="name"> Fullname </label>
+                    <input type="text" id="name" placeholder="Your name"  required>
+                    <small class="error"></small>
+
+                    <label for="Email"> Email </label>
+                    <input type="text" id="email" placeholder="Your email"  required>
+                    <small class="error"></small>
+
+
+                    <label for="Age"> Age  </label>
+                    <input type="text" id="age" placeholder="Your Age" required>
+                    <small class="error"></small>
+
+                    <label for="Phone"> Phone </label>
+                    <input type="text" id="phone" placeholder="Your Phone" required>
+                    <small class="error"></small>
+
+                    <label for="Message"> Message  </label>
+                    <textarea  id="Message" placeholder="message" rows="6"></textarea>
+                    <small class="error"></small>
+
+                    <div class="submit">
+                    <input type="submit" value="Send Message"> 
+                    <p id="success"></p>
+                    </div>
+        </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
